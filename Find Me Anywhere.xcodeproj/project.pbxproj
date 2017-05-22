@@ -12,6 +12,7 @@
 		43E54D331ED2F539008DB63C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43E54D311ED2F539008DB63C /* Main.storyboard */; };
 		43E54D351ED2F539008DB63C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43E54D341ED2F539008DB63C /* Assets.xcassets */; };
 		43E54D381ED2F539008DB63C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43E54D361ED2F539008DB63C /* LaunchScreen.storyboard */; };
+		43E54D411ED2F5BB008DB63C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E54D401ED2F5BB008DB63C /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		43E54D341ED2F539008DB63C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43E54D371ED2F539008DB63C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		43E54D391ED2F539008DB63C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43E54D401ED2F5BB008DB63C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43E54D411ED2F5BB008DB63C /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +43,7 @@
 			children = (
 				43E54D2C1ED2F539008DB63C /* Find Me Anywhere */,
 				43E54D2B1ED2F539008DB63C /* Products */,
+				43E54D3F1ED2F5BB008DB63C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +66,14 @@
 				43E54D391ED2F539008DB63C /* Info.plist */,
 			);
 			path = "Find Me Anywhere";
+			sourceTree = "<group>";
+		};
+		43E54D3F1ED2F5BB008DB63C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				43E54D401ED2F5BB008DB63C /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
