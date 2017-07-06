@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "43E54D291ED2F539008DB63C"
-               BuildableName = "Find Me Anywhere.app"
-               BlueprintName = "Find Me Anywhere"
+               BuildableName = "FMA.app"
+               BlueprintName = "FMA"
                ReferencedContainer = "container:Find Me Anywhere.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,8 +33,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "43E54D291ED2F539008DB63C"
-            BuildableName = "Find Me Anywhere.app"
-            BlueprintName = "Find Me Anywhere"
+            BuildableName = "FMA.app"
+            BlueprintName = "FMA"
             ReferencedContainer = "container:Find Me Anywhere.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -56,8 +56,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "43E54D291ED2F539008DB63C"
-            BuildableName = "Find Me Anywhere.app"
-            BlueprintName = "Find Me Anywhere"
+            BuildableName = "FMA.app"
+            BlueprintName = "FMA"
             ReferencedContainer = "container:Find Me Anywhere.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -75,8 +75,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "43E54D291ED2F539008DB63C"
-            BuildableName = "Find Me Anywhere.app"
-            BlueprintName = "Find Me Anywhere"
+            BuildableName = "FMA.app"
+            BlueprintName = "FMA"
             ReferencedContainer = "container:Find Me Anywhere.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

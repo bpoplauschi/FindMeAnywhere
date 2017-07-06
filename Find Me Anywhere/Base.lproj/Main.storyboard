@@ -25,10 +25,10 @@
             </objects>
             <point key="canvasLocation" x="1566" y="-867"/>
         </scene>
-        <!--View Controller-->
+        <!--Find View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Find_Me_Anywhere" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="FMAFindViewController" customModule="Find_Me_Anywhere" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>

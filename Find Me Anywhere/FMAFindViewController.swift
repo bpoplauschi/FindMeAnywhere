@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  FMAFindViewController.swift
 //  Find Me Anywhere
 //
 //  Created by Bogdan Poplauschi on 22/05/2017.
@@ -9,7 +9,7 @@
 import UIKit
 import MapKit
 
-class ViewController: UIViewController {
+class FMAFindViewController: UIViewController {
     @IBOutlet weak var mapView: MKMapView!
     var locationManager: CLLocationManager?
 
@@ -55,7 +55,7 @@ let MERCATOR_OFFSET = 268435456.0
 let MERCATOR_RADIUS = 85445659.44705395
 let DEGREES = 180.0
 
-extension MKMapView{
+extension MKMapView {
     //MARK: Map Conversion Methods
     private func longitudeToPixelSpaceX(longitude:Double)->Double{
         return round(MERCATOR_OFFSET + MERCATOR_RADIUS * longitude * Double.pi / DEGREES)

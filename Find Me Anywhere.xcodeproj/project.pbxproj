@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		43E54D2E1ED2F539008DB63C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E54D2D1ED2F539008DB63C /* AppDelegate.swift */; };
-		43E54D301ED2F539008DB63C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E54D2F1ED2F539008DB63C /* ViewController.swift */; };
+		43E54D2E1ED2F539008DB63C /* FMAApplicationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E54D2D1ED2F539008DB63C /* FMAApplicationDelegate.swift */; };
+		43E54D301ED2F539008DB63C /* FMAFindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E54D2F1ED2F539008DB63C /* FMAFindViewController.swift */; };
 		43E54D331ED2F539008DB63C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43E54D311ED2F539008DB63C /* Main.storyboard */; };
 		43E54D351ED2F539008DB63C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43E54D341ED2F539008DB63C /* Assets.xcassets */; };
 		43E54D381ED2F539008DB63C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43E54D361ED2F539008DB63C /* LaunchScreen.storyboard */; };
@@ -17,8 +17,8 @@
 
 /* Begin PBXFileReference section */
 		43E54D2A1ED2F539008DB63C /* Find Me Anywhere.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Find Me Anywhere.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		43E54D2D1ED2F539008DB63C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		43E54D2F1ED2F539008DB63C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		43E54D2D1ED2F539008DB63C /* FMAApplicationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMAApplicationDelegate.swift; sourceTree = "<group>"; };
+		43E54D2F1ED2F539008DB63C /* FMAFindViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMAFindViewController.swift; sourceTree = "<group>"; };
 		43E54D321ED2F539008DB63C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		43E54D341ED2F539008DB63C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43E54D371ED2F539008DB63C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,8 +58,8 @@
 		43E54D2C1ED2F539008DB63C /* Find Me Anywhere */ = {
 			isa = PBXGroup;
 			children = (
-				43E54D2D1ED2F539008DB63C /* AppDelegate.swift */,
-				43E54D2F1ED2F539008DB63C /* ViewController.swift */,
+				43E54D2D1ED2F539008DB63C /* FMAApplicationDelegate.swift */,
+				43E54D2F1ED2F539008DB63C /* FMAFindViewController.swift */,
 				43E54D311ED2F539008DB63C /* Main.storyboard */,
 				43E54D341ED2F539008DB63C /* Assets.xcassets */,
 				43E54D361ED2F539008DB63C /* LaunchScreen.storyboard */,
@@ -79,9 +79,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		43E54D291ED2F539008DB63C /* Find Me Anywhere */ = {
+		43E54D291ED2F539008DB63C /* FMA */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 43E54D3C1ED2F539008DB63C /* Build configuration list for PBXNativeTarget "Find Me Anywhere" */;
+			buildConfigurationList = 43E54D3C1ED2F539008DB63C /* Build configuration list for PBXNativeTarget "FMA" */;
 			buildPhases = (
 				43E54D261ED2F539008DB63C /* Sources */,
 				43E54D271ED2F539008DB63C /* Frameworks */,
@@ -91,7 +91,7 @@
 			);
 			dependencies = (
 			);
-			name = "Find Me Anywhere";
+			name = FMA;
 			productName = "Find Me Anywhere";
 			productReference = 43E54D2A1ED2F539008DB63C /* Find Me Anywhere.app */;
 			productType = "com.apple.product-type.application";
@@ -126,7 +126,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				43E54D291ED2F539008DB63C /* Find Me Anywhere */,
+				43E54D291ED2F539008DB63C /* FMA */,
 			);
 		};
 /* End PBXProject section */
@@ -149,8 +149,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43E54D301ED2F539008DB63C /* ViewController.swift in Sources */,
-				43E54D2E1ED2F539008DB63C /* AppDelegate.swift in Sources */,
+				43E54D301ED2F539008DB63C /* FMAFindViewController.swift in Sources */,
+				43E54D2E1ED2F539008DB63C /* FMAApplicationDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,7 +309,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		43E54D3C1ED2F539008DB63C /* Build configuration list for PBXNativeTarget "Find Me Anywhere" */ = {
+		43E54D3C1ED2F539008DB63C /* Build configuration list for PBXNativeTarget "FMA" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				43E54D3D1ED2F539008DB63C /* Debug */,

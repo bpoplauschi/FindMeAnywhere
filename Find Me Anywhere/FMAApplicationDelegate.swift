@@ -1,5 +1,5 @@
 //
-//  AppDelegate.swift
+//  FMAApplicationDelegate.swift
 //  Find Me Anywhere
 //
 //  Created by Bogdan Poplauschi on 22/05/2017.
@@ -9,7 +9,7 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class FMAApplicationDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
