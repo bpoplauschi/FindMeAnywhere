@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		43793EDF1F0E9BAD003E79CD /* FMATrackersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43793EDE1F0E9BAD003E79CD /* FMATrackersViewController.swift */; };
-		43793EE11F0E9BC2003E79CD /* FMARemindersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43793EE01F0E9BC2003E79CD /* FMARemindersViewController.swift */; };
-		43793EE31F0E9D84003E79CD /* MKMapView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43793EE21F0E9D84003E79CD /* MKMapView+Additions.swift */; };
-		43793EE51F0E9DFF003E79CD /* UIBarButtonItem+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43793EE41F0E9DFF003E79CD /* UIBarButtonItem+Additions.swift */; };
-		43793EE71F0EA060003E79CD /* FMASubscriptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43793EE61F0EA060003E79CD /* FMASubscriptionsViewController.swift */; };
-		43793EE91F0EA073003E79CD /* FMAAboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43793EE81F0EA073003E79CD /* FMAAboutViewController.swift */; };
+		43793EF71F0EA219003E79CD /* FMAAboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43793EEB1F0EA219003E79CD /* FMAAboutViewController.swift */; };
+		43793EF81F0EA219003E79CD /* FMAFindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43793EED1F0EA219003E79CD /* FMAFindViewController.swift */; };
+		43793EF91F0EA219003E79CD /* FMARemindersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43793EEF1F0EA219003E79CD /* FMARemindersViewController.swift */; };
+		43793EFA1F0EA219003E79CD /* FMASubscriptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43793EF11F0EA219003E79CD /* FMASubscriptionsViewController.swift */; };
+		43793EFB1F0EA219003E79CD /* FMATrackersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43793EF31F0EA219003E79CD /* FMATrackersViewController.swift */; };
+		43793EFC1F0EA219003E79CD /* MKMapView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43793EF51F0EA219003E79CD /* MKMapView+Additions.swift */; };
+		43793EFD1F0EA219003E79CD /* UIBarButtonItem+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43793EF61F0EA219003E79CD /* UIBarButtonItem+Additions.swift */; };
 		43E54D2E1ED2F539008DB63C /* FMAApplicationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E54D2D1ED2F539008DB63C /* FMAApplicationDelegate.swift */; };
-		43E54D301ED2F539008DB63C /* FMAFindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E54D2F1ED2F539008DB63C /* FMAFindViewController.swift */; };
 		43E54D331ED2F539008DB63C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43E54D311ED2F539008DB63C /* Main.storyboard */; };
 		43E54D351ED2F539008DB63C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43E54D341ED2F539008DB63C /* Assets.xcassets */; };
 		43E54D381ED2F539008DB63C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43E54D361ED2F539008DB63C /* LaunchScreen.storyboard */; };
@@ -22,15 +22,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		43793EDE1F0E9BAD003E79CD /* FMATrackersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMATrackersViewController.swift; sourceTree = "<group>"; };
-		43793EE01F0E9BC2003E79CD /* FMARemindersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMARemindersViewController.swift; sourceTree = "<group>"; };
-		43793EE21F0E9D84003E79CD /* MKMapView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MKMapView+Additions.swift"; sourceTree = "<group>"; };
-		43793EE41F0E9DFF003E79CD /* UIBarButtonItem+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Additions.swift"; sourceTree = "<group>"; };
-		43793EE61F0EA060003E79CD /* FMASubscriptionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMASubscriptionsViewController.swift; sourceTree = "<group>"; };
-		43793EE81F0EA073003E79CD /* FMAAboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMAAboutViewController.swift; sourceTree = "<group>"; };
+		43793EEB1F0EA219003E79CD /* FMAAboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMAAboutViewController.swift; sourceTree = "<group>"; };
+		43793EED1F0EA219003E79CD /* FMAFindViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMAFindViewController.swift; sourceTree = "<group>"; };
+		43793EEF1F0EA219003E79CD /* FMARemindersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMARemindersViewController.swift; sourceTree = "<group>"; };
+		43793EF11F0EA219003E79CD /* FMASubscriptionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMASubscriptionsViewController.swift; sourceTree = "<group>"; };
+		43793EF31F0EA219003E79CD /* FMATrackersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMATrackersViewController.swift; sourceTree = "<group>"; };
+		43793EF51F0EA219003E79CD /* MKMapView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MKMapView+Additions.swift"; sourceTree = "<group>"; };
+		43793EF61F0EA219003E79CD /* UIBarButtonItem+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Additions.swift"; sourceTree = "<group>"; };
 		43E54D2A1ED2F539008DB63C /* Find Me Anywhere.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Find Me Anywhere.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43E54D2D1ED2F539008DB63C /* FMAApplicationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMAApplicationDelegate.swift; sourceTree = "<group>"; };
-		43E54D2F1ED2F539008DB63C /* FMAFindViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMAFindViewController.swift; sourceTree = "<group>"; };
 		43E54D321ED2F539008DB63C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		43E54D341ED2F539008DB63C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43E54D371ED2F539008DB63C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -50,6 +50,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		43793EEA1F0EA219003E79CD /* About */ = {
+			isa = PBXGroup;
+			children = (
+				43793EEB1F0EA219003E79CD /* FMAAboutViewController.swift */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
+		43793EEC1F0EA219003E79CD /* Find */ = {
+			isa = PBXGroup;
+			children = (
+				43793EED1F0EA219003E79CD /* FMAFindViewController.swift */,
+			);
+			path = Find;
+			sourceTree = "<group>";
+		};
+		43793EEE1F0EA219003E79CD /* Reminders */ = {
+			isa = PBXGroup;
+			children = (
+				43793EEF1F0EA219003E79CD /* FMARemindersViewController.swift */,
+			);
+			path = Reminders;
+			sourceTree = "<group>";
+		};
+		43793EF01F0EA219003E79CD /* Subscriptions */ = {
+			isa = PBXGroup;
+			children = (
+				43793EF11F0EA219003E79CD /* FMASubscriptionsViewController.swift */,
+			);
+			path = Subscriptions;
+			sourceTree = "<group>";
+		};
+		43793EF21F0EA219003E79CD /* Trackers */ = {
+			isa = PBXGroup;
+			children = (
+				43793EF31F0EA219003E79CD /* FMATrackersViewController.swift */,
+			);
+			path = Trackers;
+			sourceTree = "<group>";
+		};
+		43793EF41F0EA219003E79CD /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				43793EF51F0EA219003E79CD /* MKMapView+Additions.swift */,
+				43793EF61F0EA219003E79CD /* UIBarButtonItem+Additions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		43E54D211ED2F539008DB63C = {
 			isa = PBXGroup;
 			children = (
@@ -70,14 +119,13 @@
 		43E54D2C1ED2F539008DB63C /* Find Me Anywhere */ = {
 			isa = PBXGroup;
 			children = (
+				43793EEC1F0EA219003E79CD /* Find */,
+				43793EEE1F0EA219003E79CD /* Reminders */,
+				43793EF21F0EA219003E79CD /* Trackers */,
+				43793EF01F0EA219003E79CD /* Subscriptions */,
+				43793EEA1F0EA219003E79CD /* About */,
+				43793EF41F0EA219003E79CD /* Utils */,
 				43E54D2D1ED2F539008DB63C /* FMAApplicationDelegate.swift */,
-				43E54D2F1ED2F539008DB63C /* FMAFindViewController.swift */,
-				43793EE01F0E9BC2003E79CD /* FMARemindersViewController.swift */,
-				43793EDE1F0E9BAD003E79CD /* FMATrackersViewController.swift */,
-				43793EE61F0EA060003E79CD /* FMASubscriptionsViewController.swift */,
-				43793EE81F0EA073003E79CD /* FMAAboutViewController.swift */,
-				43793EE21F0E9D84003E79CD /* MKMapView+Additions.swift */,
-				43793EE41F0E9DFF003E79CD /* UIBarButtonItem+Additions.swift */,
 				43E54D311ED2F539008DB63C /* Main.storyboard */,
 				43E54D341ED2F539008DB63C /* Assets.xcassets */,
 				43E54D361ED2F539008DB63C /* LaunchScreen.storyboard */,
@@ -167,14 +215,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43793EDF1F0E9BAD003E79CD /* FMATrackersViewController.swift in Sources */,
-				43E54D301ED2F539008DB63C /* FMAFindViewController.swift in Sources */,
-				43793EE51F0E9DFF003E79CD /* UIBarButtonItem+Additions.swift in Sources */,
-				43793EE31F0E9D84003E79CD /* MKMapView+Additions.swift in Sources */,
-				43793EE11F0E9BC2003E79CD /* FMARemindersViewController.swift in Sources */,
-				43793EE91F0EA073003E79CD /* FMAAboutViewController.swift in Sources */,
-				43793EE71F0EA060003E79CD /* FMASubscriptionsViewController.swift in Sources */,
+				43793EF81F0EA219003E79CD /* FMAFindViewController.swift in Sources */,
 				43E54D2E1ED2F539008DB63C /* FMAApplicationDelegate.swift in Sources */,
+				43793EFD1F0EA219003E79CD /* UIBarButtonItem+Additions.swift in Sources */,
+				43793EFB1F0EA219003E79CD /* FMATrackersViewController.swift in Sources */,
+				43793EF91F0EA219003E79CD /* FMARemindersViewController.swift in Sources */,
+				43793EFC1F0EA219003E79CD /* MKMapView+Additions.swift in Sources */,
+				43793EF71F0EA219003E79CD /* FMAAboutViewController.swift in Sources */,
+				43793EFA1F0EA219003E79CD /* FMASubscriptionsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
