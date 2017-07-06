@@ -15,7 +15,7 @@ class FMAFindViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Find Me Anywhere"
+        title = "Find Me"
         
         let fmaImage = UIImage(named: "SearchButton")
         navigationItem.rightBarButtonItem = UIBarButtonItem.itemWith(image: fmaImage, target: self, action: #selector(didTapSearch(responder:)))

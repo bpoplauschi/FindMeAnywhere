@@ -14,6 +14,7 @@
 		43793EFB1F0EA219003E79CD /* FMATrackersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43793EF31F0EA219003E79CD /* FMATrackersViewController.swift */; };
 		43793EFC1F0EA219003E79CD /* MKMapView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43793EF51F0EA219003E79CD /* MKMapView+Additions.swift */; };
 		43793EFD1F0EA219003E79CD /* UIBarButtonItem+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43793EF61F0EA219003E79CD /* UIBarButtonItem+Additions.swift */; };
+		43793EFF1F0EAACC003E79CD /* Menu.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43793EFE1F0EAACC003E79CD /* Menu.xcassets */; };
 		43E54D2E1ED2F539008DB63C /* FMAApplicationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E54D2D1ED2F539008DB63C /* FMAApplicationDelegate.swift */; };
 		43E54D331ED2F539008DB63C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43E54D311ED2F539008DB63C /* Main.storyboard */; };
 		43E54D351ED2F539008DB63C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43E54D341ED2F539008DB63C /* Assets.xcassets */; };
@@ -29,6 +30,7 @@
 		43793EF31F0EA219003E79CD /* FMATrackersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMATrackersViewController.swift; sourceTree = "<group>"; };
 		43793EF51F0EA219003E79CD /* MKMapView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MKMapView+Additions.swift"; sourceTree = "<group>"; };
 		43793EF61F0EA219003E79CD /* UIBarButtonItem+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Additions.swift"; sourceTree = "<group>"; };
+		43793EFE1F0EAACC003E79CD /* Menu.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Menu.xcassets; sourceTree = "<group>"; };
 		43E54D2A1ED2F539008DB63C /* Find Me Anywhere.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Find Me Anywhere.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43E54D2D1ED2F539008DB63C /* FMAApplicationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMAApplicationDelegate.swift; sourceTree = "<group>"; };
 		43E54D321ED2F539008DB63C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				43E54D2D1ED2F539008DB63C /* FMAApplicationDelegate.swift */,
 				43E54D311ED2F539008DB63C /* Main.storyboard */,
 				43E54D341ED2F539008DB63C /* Assets.xcassets */,
+				43793EFE1F0EAACC003E79CD /* Menu.xcassets */,
 				43E54D361ED2F539008DB63C /* LaunchScreen.storyboard */,
 				43E54D391ED2F539008DB63C /* Info.plist */,
 			);
@@ -204,6 +207,7 @@
 			files = (
 				43E54D381ED2F539008DB63C /* LaunchScreen.storyboard in Resources */,
 				43E54D351ED2F539008DB63C /* Assets.xcassets in Resources */,
+				43793EFF1F0EAACC003E79CD /* Menu.xcassets in Resources */,
 				43E54D331ED2F539008DB63C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
