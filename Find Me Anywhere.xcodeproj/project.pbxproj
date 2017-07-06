@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43793EDF1F0E9BAD003E79CD /* FMAMoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43793EDE1F0E9BAD003E79CD /* FMAMoreViewController.swift */; };
+		43793EE11F0E9BC2003E79CD /* FMARemindersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43793EE01F0E9BC2003E79CD /* FMARemindersViewController.swift */; };
+		43793EE31F0E9D84003E79CD /* MKMapView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43793EE21F0E9D84003E79CD /* MKMapView+Additions.swift */; };
+		43793EE51F0E9DFF003E79CD /* UIBarButtonItem+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43793EE41F0E9DFF003E79CD /* UIBarButtonItem+Additions.swift */; };
 		43E54D2E1ED2F539008DB63C /* FMAApplicationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E54D2D1ED2F539008DB63C /* FMAApplicationDelegate.swift */; };
 		43E54D301ED2F539008DB63C /* FMAFindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E54D2F1ED2F539008DB63C /* FMAFindViewController.swift */; };
 		43E54D331ED2F539008DB63C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43E54D311ED2F539008DB63C /* Main.storyboard */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		43793EDE1F0E9BAD003E79CD /* FMAMoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMAMoreViewController.swift; sourceTree = "<group>"; };
+		43793EE01F0E9BC2003E79CD /* FMARemindersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMARemindersViewController.swift; sourceTree = "<group>"; };
+		43793EE21F0E9D84003E79CD /* MKMapView+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MKMapView+Additions.swift"; sourceTree = "<group>"; };
+		43793EE41F0E9DFF003E79CD /* UIBarButtonItem+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Additions.swift"; sourceTree = "<group>"; };
 		43E54D2A1ED2F539008DB63C /* Find Me Anywhere.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Find Me Anywhere.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43E54D2D1ED2F539008DB63C /* FMAApplicationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMAApplicationDelegate.swift; sourceTree = "<group>"; };
 		43E54D2F1ED2F539008DB63C /* FMAFindViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMAFindViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +68,10 @@
 			children = (
 				43E54D2D1ED2F539008DB63C /* FMAApplicationDelegate.swift */,
 				43E54D2F1ED2F539008DB63C /* FMAFindViewController.swift */,
+				43793EE01F0E9BC2003E79CD /* FMARemindersViewController.swift */,
+				43793EDE1F0E9BAD003E79CD /* FMAMoreViewController.swift */,
+				43793EE21F0E9D84003E79CD /* MKMapView+Additions.swift */,
+				43793EE41F0E9DFF003E79CD /* UIBarButtonItem+Additions.swift */,
 				43E54D311ED2F539008DB63C /* Main.storyboard */,
 				43E54D341ED2F539008DB63C /* Assets.xcassets */,
 				43E54D361ED2F539008DB63C /* LaunchScreen.storyboard */,
@@ -149,7 +161,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43793EDF1F0E9BAD003E79CD /* FMAMoreViewController.swift in Sources */,
 				43E54D301ED2F539008DB63C /* FMAFindViewController.swift in Sources */,
+				43793EE51F0E9DFF003E79CD /* UIBarButtonItem+Additions.swift in Sources */,
+				43793EE31F0E9D84003E79CD /* MKMapView+Additions.swift in Sources */,
+				43793EE11F0E9BC2003E79CD /* FMARemindersViewController.swift in Sources */,
 				43E54D2E1ED2F539008DB63C /* FMAApplicationDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

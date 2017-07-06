@@ -28,7 +28,7 @@
         <!--Find View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="FMAFindViewController" customModule="Find_Me_Anywhere" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="FMAFindViewController" customModule="FMA" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -58,10 +58,27 @@
             </objects>
             <point key="canvasLocation" x="2378" y="-868"/>
         </scene>
-        <!--View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="Ffi-ag-Vsa">
+            <objects>
+                <navigationController id="YgJ-Is-FU4" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="more" id="A2c-l4-Mtd"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bly-Ss-L4y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="oDv-RK-L2e" kind="relationship" relationship="rootViewController" id="yyn-I6-mIX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HqI-G3-w1v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1566" y="466"/>
+        </scene>
+        <!--More View Controller-->
         <scene sceneID="OTJ-0L-T6c">
             <objects>
-                <viewController id="oDv-RK-L2e" sceneMemberID="viewController">
+                <viewController id="oDv-RK-L2e" customClass="FMAMoreViewController" customModule="FMA" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mx5-fd-SQE"/>
                         <viewControllerLayoutGuide type="bottom" id="J3h-Jm-hon"/>
@@ -78,16 +95,19 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="more" id="252-7d-sjy"/>
+                    <navigationItem key="navigationItem" id="U71-Wz-PuO"/>
+                    <connections>
+                        <outlet property="tableView" destination="Wjt-Ix-bFl" id="hQM-SP-GZ2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CPE-tU-i6M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1565.5999999999999" y="464.6176911544228"/>
+            <point key="canvasLocation" x="2377" y="467"/>
         </scene>
-        <!--Reminders-->
+        <!--Reminders View Controller-->
         <scene sceneID="PhS-L3-muc">
             <objects>
-                <viewController id="6lx-hN-t78" sceneMemberID="viewController">
+                <viewController id="6lx-hN-t78" customClass="FMARemindersViewController" customModule="FMA" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="G5M-v4-Od3"/>
                         <viewControllerLayoutGuide type="bottom" id="dgR-WA-RR0"/>
@@ -104,11 +124,28 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Reminders" id="xs8-FK-H8U"/>
+                    <navigationItem key="navigationItem" id="8yJ-OS-xlY"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="crb-jX-38B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1565.5999999999999" y="-191.1544227886057"/>
+            <point key="canvasLocation" x="2377" y="-209"/>
+        </scene>
+        <!--Reminders-->
+        <scene sceneID="hEG-PN-QRI">
+            <objects>
+                <navigationController id="VbM-Vt-RCH" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Reminders" id="HiP-aJ-hd6"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="JUe-PZ-6hA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="6lx-hN-t78" kind="relationship" relationship="rootViewController" id="P58-eG-TVZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YHE-Va-rZa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1566" y="-209"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="xuC-4A-4JH">
@@ -121,8 +158,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="o23-PD-0Je" kind="relationship" relationship="viewControllers" id="bA2-iD-Edd"/>
-                        <segue destination="6lx-hN-t78" kind="relationship" relationship="viewControllers" id="vTu-cq-mMK"/>
-                        <segue destination="oDv-RK-L2e" kind="relationship" relationship="viewControllers" id="bkR-Qk-O5D"/>
+                        <segue destination="VbM-Vt-RCH" kind="relationship" relationship="viewControllers" id="R2G-cq-VLb"/>
+                        <segue destination="YgJ-Is-FU4" kind="relationship" relationship="viewControllers" id="MpJ-HW-5e8"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zer-Jn-5lG" userLabel="First Responder" sceneMemberID="firstResponder"/>
