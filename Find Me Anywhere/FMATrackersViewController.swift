@@ -1,5 +1,5 @@
 //
-//  FMAMoreViewController.swift
+//  FMATrackersViewController.swift
 //  Find Me Anywhere
 //
 //  Created by Bogdan Poplauschi on 06/07/2017.
@@ -8,11 +8,11 @@
 
 import UIKit
 
-class FMAMoreViewController: UIViewController {
+class FMATrackersViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "More"
+        title = "Trackers"
     }
 }
