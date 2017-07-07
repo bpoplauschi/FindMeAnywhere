@@ -21,7 +21,8 @@ class FMATrackersViewController: UIViewController {
         
         let confirmAction = UIAlertAction(title: "Confirm", style: .default) { (_) in
             if let phoneNumber = alertController.textFields?[0].text, let name = alertController.textFields?[1].text {
-                self.addDevice(name: name, phoneNumber: phoneNumber)
+                FMATrackersManager.sharedManager.addDevice(name: name, phoneNumber: phoneNumber)
+                self.tableView.reloadData()
             } else {
                 // user did not fill field
             }
@@ -42,54 +43,17 @@ class FMATrackersViewController: UIViewController {
         
         self.present(alertController, animated: true, completion: nil)
     }
-    
-    var devices: [[String: String]] {
-        get {
-            if let devices = UserDefaults.standard.array(forKey: "devices") as? [[String:String]] {
-                return devices
-            }
-            return []
-        }
-    }
-    
-    func addDevice(name:String, phoneNumber:String) -> Void {
-        var devices = UserDefaults.standard.array(forKey: "devices")
-        if devices == nil {
-            devices = []
-        }
-        devices?.append(["phone": phoneNumber, "name": name])
-        UserDefaults.standard.set(devices, forKey: "devices")
-        
-        tableView.reloadData()
-    }
-    
-    func deleteDevice(name:String) -> Void {
-        guard var devices = UserDefaults.standard.array(forKey: "devices") else { return }
-        var indexOfDeviceToDelete = 0
-        for device in devices {
-            if let device = device as? [String:String], let deviceName = device["name"], name == deviceName {
-                break
-            }
-            indexOfDeviceToDelete += 1
-        }
-        if indexOfDeviceToDelete < devices.count {
-            devices.remove(at: indexOfDeviceToDelete)
-        }
-        UserDefaults.standard.set(devices, forKey: "devices")
-        
-        tableView.reloadData()
-    }
 }
 
 extension FMATrackersViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.devices.count
+        return FMATrackersManager.sharedManager.devices.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .value1, reuseIdentifier: "reuseID")
         
-        let device = self.devices[indexPath.row]
+        let device = FMATrackersManager.sharedManager.devices[indexPath.row]
         cell.textLabel?.text = device["phone"] ?? ""
         cell.detailTextLabel?.text = device["name"] ?? ""
         
@@ -103,8 +67,9 @@ extension FMATrackersViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             // Delete the row from the data source
-            if let deviceName = self.devices[indexPath.row]["name"] {
-                self.deleteDevice(name: deviceName)
+            if let deviceName = FMATrackersManager.sharedManager.devices[indexPath.row]["name"] {
+                FMATrackersManager.sharedManager.deleteDevice(name: deviceName)
+                tableView.reloadData()
             }
         }
     }
