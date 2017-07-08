@@ -105,14 +105,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="U71-Wz-PuO">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="mcp-Bg-0jV">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" id="fZk-c1-oQD">
-                                <rect key="frame" x="337" y="11" width="22" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="didTapAdd:" destination="oDv-RK-L2e" eventType="touchUpInside" id="vcA-YQ-AwM"/>
-                                </connections>
-                            </button>
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="mcp-Bg-0jV">
+                            <connections>
+                                <action selector="didTapAdd:" destination="oDv-RK-L2e" id="aOV-fb-Jo2"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -274,9 +270,13 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Osa-qg-oBZ">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="Osa-qg-oBZ">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="6lx-hN-t78" id="d0C-I3-KKk"/>
+                                    <outlet property="delegate" destination="6lx-hN-t78" id="yKm-yk-MIh"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -287,7 +287,16 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
                             <constraint firstAttribute="trailing" secondItem="Osa-qg-oBZ" secondAttribute="trailing" id="oTJ-55-bzi"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="8yJ-OS-xlY"/>
+                    <navigationItem key="navigationItem" id="8yJ-OS-xlY">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="dxG-s1-3OI">
+                            <connections>
+                                <action selector="didTapAdd:" destination="6lx-hN-t78" id="Yfu-6s-aLH"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="Osa-qg-oBZ" id="kEV-5m-ymV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="crb-jX-38B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

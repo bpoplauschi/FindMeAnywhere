@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A612CB71F10C82E00871479 /* FMALocalNotificationsScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A612CB61F10C82E00871479 /* FMALocalNotificationsScheduler.swift */; };
+		3A612CB91F10CD5A00871479 /* FMAReminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A612CB81F10CD5A00871479 /* FMAReminder.swift */; };
+		3A612CBE1F10D6EB00871479 /* FMAReminderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A612CBC1F10D6EB00871479 /* FMAReminderController.swift */; };
+		3A612CC11F10F60B00871479 /* DatePickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A612CC01F10F60B00871479 /* DatePickerCell.swift */; };
+		3A612CC31F10FB2A00871479 /* FMAChoicePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A612CC21F10FB2A00871479 /* FMAChoicePickerController.swift */; };
 		43793EF71F0EA219003E79CD /* FMAAboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43793EEB1F0EA219003E79CD /* FMAAboutViewController.swift */; };
 		43793EF81F0EA219003E79CD /* FMAFindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43793EED1F0EA219003E79CD /* FMAFindViewController.swift */; };
 		43793EF91F0EA219003E79CD /* FMARemindersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43793EEF1F0EA219003E79CD /* FMARemindersViewController.swift */; };
@@ -24,6 +29,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A612CB61F10C82E00871479 /* FMALocalNotificationsScheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMALocalNotificationsScheduler.swift; sourceTree = "<group>"; };
+		3A612CB81F10CD5A00871479 /* FMAReminder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMAReminder.swift; sourceTree = "<group>"; };
+		3A612CBC1F10D6EB00871479 /* FMAReminderController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMAReminderController.swift; sourceTree = "<group>"; };
+		3A612CC01F10F60B00871479 /* DatePickerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerCell.swift; sourceTree = "<group>"; };
+		3A612CC21F10FB2A00871479 /* FMAChoicePickerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMAChoicePickerController.swift; sourceTree = "<group>"; };
 		43793EEB1F0EA219003E79CD /* FMAAboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMAAboutViewController.swift; sourceTree = "<group>"; };
 		43793EED1F0EA219003E79CD /* FMAFindViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMAFindViewController.swift; sourceTree = "<group>"; };
 		43793EEF1F0EA219003E79CD /* FMARemindersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMARemindersViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +84,11 @@
 			isa = PBXGroup;
 			children = (
 				43793EEF1F0EA219003E79CD /* FMARemindersViewController.swift */,
+				3A612CB61F10C82E00871479 /* FMALocalNotificationsScheduler.swift */,
+				3A612CB81F10CD5A00871479 /* FMAReminder.swift */,
+				3A612CBC1F10D6EB00871479 /* FMAReminderController.swift */,
+				3A612CC01F10F60B00871479 /* DatePickerCell.swift */,
+				3A612CC21F10FB2A00871479 /* FMAChoicePickerController.swift */,
 			);
 			path = Reminders;
 			sourceTree = "<group>";
@@ -222,15 +237,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A612CBE1F10D6EB00871479 /* FMAReminderController.swift in Sources */,
+				3A612CC31F10FB2A00871479 /* FMAChoicePickerController.swift in Sources */,
 				43793EF81F0EA219003E79CD /* FMAFindViewController.swift in Sources */,
 				43E54D2E1ED2F539008DB63C /* FMAApplicationDelegate.swift in Sources */,
 				4397B68F1F0F89EE00ABDB3E /* FMATrackersManager.swift in Sources */,
 				43793EFD1F0EA219003E79CD /* UIBarButtonItem+Additions.swift in Sources */,
 				43793EFB1F0EA219003E79CD /* FMATrackersViewController.swift in Sources */,
+				3A612CC11F10F60B00871479 /* DatePickerCell.swift in Sources */,
+				3A612CB91F10CD5A00871479 /* FMAReminder.swift in Sources */,
 				43793EF91F0EA219003E79CD /* FMARemindersViewController.swift in Sources */,
 				43793EFC1F0EA219003E79CD /* MKMapView+Additions.swift in Sources */,
 				43793EF71F0EA219003E79CD /* FMAAboutViewController.swift in Sources */,
 				43793EFA1F0EA219003E79CD /* FMASubscriptionsViewController.swift in Sources */,
+				3A612CB71F10C82E00871479 /* FMALocalNotificationsScheduler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
