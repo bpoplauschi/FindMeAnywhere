@@ -23,6 +23,8 @@
 		4397B68F1F0F89EE00ABDB3E /* FMATrackersManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4397B68E1F0F89EE00ABDB3E /* FMATrackersManager.swift */; };
 		43A4DD3F1F112453004D5A25 /* FMATrackerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A4DD3D1F112453004D5A25 /* FMATrackerTableViewCell.swift */; };
 		43A4DD401F112453004D5A25 /* FMATrackerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43A4DD3E1F112453004D5A25 /* FMATrackerTableViewCell.xib */; };
+		43A4DD431F112A31004D5A25 /* FMASubscriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A4DD411F112A31004D5A25 /* FMASubscriptionTableViewCell.swift */; };
+		43A4DD441F112A31004D5A25 /* FMASubscriptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43A4DD421F112A31004D5A25 /* FMASubscriptionTableViewCell.xib */; };
 		43E54D2E1ED2F539008DB63C /* FMAApplicationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E54D2D1ED2F539008DB63C /* FMAApplicationDelegate.swift */; };
 		43E54D331ED2F539008DB63C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43E54D311ED2F539008DB63C /* Main.storyboard */; };
 		43E54D351ED2F539008DB63C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43E54D341ED2F539008DB63C /* Assets.xcassets */; };
@@ -47,6 +49,8 @@
 		4397B68E1F0F89EE00ABDB3E /* FMATrackersManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMATrackersManager.swift; sourceTree = "<group>"; };
 		43A4DD3D1F112453004D5A25 /* FMATrackerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMATrackerTableViewCell.swift; sourceTree = "<group>"; };
 		43A4DD3E1F112453004D5A25 /* FMATrackerTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FMATrackerTableViewCell.xib; sourceTree = "<group>"; };
+		43A4DD411F112A31004D5A25 /* FMASubscriptionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FMASubscriptionTableViewCell.swift; sourceTree = "<group>"; };
+		43A4DD421F112A31004D5A25 /* FMASubscriptionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FMASubscriptionTableViewCell.xib; sourceTree = "<group>"; };
 		43E54D2A1ED2F539008DB63C /* Find Me Anywhere.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "Find Me Anywhere.app"; path = FMA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43E54D2D1ED2F539008DB63C /* FMAApplicationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMAApplicationDelegate.swift; sourceTree = "<group>"; };
 		43E54D321ED2F539008DB63C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -101,6 +105,8 @@
 			isa = PBXGroup;
 			children = (
 				43793EF11F0EA219003E79CD /* FMASubscriptionsViewController.swift */,
+				43A4DD411F112A31004D5A25 /* FMASubscriptionTableViewCell.swift */,
+				43A4DD421F112A31004D5A25 /* FMASubscriptionTableViewCell.xib */,
 			);
 			path = Subscriptions;
 			sourceTree = "<group>";
@@ -229,6 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43A4DD441F112A31004D5A25 /* FMASubscriptionTableViewCell.xib in Resources */,
 				43E54D381ED2F539008DB63C /* LaunchScreen.storyboard in Resources */,
 				43E54D351ED2F539008DB63C /* Assets.xcassets in Resources */,
 				43A4DD401F112453004D5A25 /* FMATrackerTableViewCell.xib in Resources */,
@@ -257,6 +264,7 @@
 				43793EFC1F0EA219003E79CD /* MKMapView+Additions.swift in Sources */,
 				43793EF71F0EA219003E79CD /* FMAAboutViewController.swift in Sources */,
 				43793EFA1F0EA219003E79CD /* FMASubscriptionsViewController.swift in Sources */,
+				43A4DD431F112A31004D5A25 /* FMASubscriptionTableViewCell.swift in Sources */,
 				43A4DD3F1F112453004D5A25 /* FMATrackerTableViewCell.swift in Sources */,
 				3A612CB71F10C82E00871479 /* FMALocalNotificationsScheduler.swift in Sources */,
 			);
