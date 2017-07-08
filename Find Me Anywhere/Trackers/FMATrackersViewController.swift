@@ -14,6 +14,8 @@ class FMATrackersViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Trackers"
+        let nib = UINib(nibName: "FMATrackerTableViewCell", bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: "trackerCellID")
     }
     
     @IBAction func didTapAdd(_ sender: Any) {
@@ -33,7 +35,6 @@ class FMATrackersViewController: UIViewController {
         alertController.addTextField { (textField) in
             textField.placeholder = "Phone number"
         }
-        
         alertController.addTextField { (textField) in
             textField.placeholder = "Name"
         }
@@ -51,11 +52,17 @@ extension FMATrackersViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .value1, reuseIdentifier: "reuseID")
-        
+        var cell: FMATrackerTableViewCell
+        if let dequeuedCell = tableView.dequeueReusableCell(withIdentifier: "trackerCellID") as? FMATrackerTableViewCell {
+            cell = dequeuedCell
+        } else {
+            cell = FMATrackerTableViewCell()
+        }
+    
+        cell.iconImageView?.image = UIImage(named: "Tracker")
         let device = FMATrackersManager.sharedManager.devices[indexPath.row]
-        cell.textLabel?.text = device["phone"] ?? ""
-        cell.detailTextLabel?.text = device["name"] ?? ""
+        cell.phoneNumberLabel?.text = device["phone"] ?? ""
+        cell.nameLabel?.text = device["name"] ?? ""
         
         return cell
     }
