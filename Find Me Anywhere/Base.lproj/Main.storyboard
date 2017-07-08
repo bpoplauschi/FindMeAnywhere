@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -87,9 +88,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Wjt-Ix-bFl">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Wjt-Ix-bFl">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="dataSource" destination="oDv-RK-L2e" id="54u-G7-72F"/>
@@ -97,6 +97,12 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Wjt-Ix-bFl" secondAttribute="trailing" id="PYy-Pj-dda"/>
+                            <constraint firstItem="Wjt-Ix-bFl" firstAttribute="leading" secondItem="QbX-SR-Kjk" secondAttribute="leading" id="S4b-OE-QzO"/>
+                            <constraint firstItem="Wjt-Ix-bFl" firstAttribute="top" secondItem="QbX-SR-Kjk" secondAttribute="top" id="edo-Ig-FX3"/>
+                            <constraint firstItem="J3h-Jm-hon" firstAttribute="top" secondItem="Wjt-Ix-bFl" secondAttribute="bottom" id="xgT-xh-iIL"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="U71-Wz-PuO">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="mcp-Bg-0jV">
@@ -146,9 +152,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" fixedFrame="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="GRP-Ct-TeG">
-                                <rect key="frame" x="47" y="202" width="280" height="262"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="GRP-Ct-TeG">
+                                <rect key="frame" x="36" y="208" width="303" height="215"/>
                                 <string key="text">Find Me Anywhere Romania, with its full name: BLABLA TRLOLOLO is a J.A. branded company that Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
@@ -156,13 +161,17 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="JAYE Logo" translatesAutoresizingMaskIntoConstraints="NO" id="hhH-ej-5Jo">
-                                <rect key="frame" x="201" y="528" width="158" height="82"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="JAYE Logo" translatesAutoresizingMaskIntoConstraints="NO" id="hhH-ej-5Jo">
+                                <rect key="frame" x="112" y="514" width="247" height="96"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="96" id="wvF-5u-yCy"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="133" translatesAutoresizingMaskIntoConstraints="NO" id="NLN-Of-bxJ">
-                                <rect key="frame" x="16" y="547" width="177" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="133" translatesAutoresizingMaskIntoConstraints="NO" id="NLN-Of-bxJ">
+                                <rect key="frame" x="16" y="546" width="130" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="LOs-Ow-9nv"/>
+                                </constraints>
                                 <string key="text">Contact us:
   +4 0700 000 000
   EMAILEMAIL@gmail.com
@@ -171,12 +180,27 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="tmt-pp-GaY">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="tmt-pp-GaY">
                                 <rect key="frame" x="67" y="72" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="d5h-Lj-BID"/>
+                                    <constraint firstAttribute="height" constant="128" id="hD4-g6-z4w"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rWg-Vw-5qv" firstAttribute="top" secondItem="hhH-ej-5Jo" secondAttribute="bottom" constant="8" id="2d8-3c-WKU"/>
+                            <constraint firstItem="rWg-Vw-5qv" firstAttribute="top" secondItem="NLN-Of-bxJ" secondAttribute="bottom" constant="8" id="3T3-rt-ge1"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="NLN-Of-bxJ" secondAttribute="leading" id="RZJ-QH-rQq"/>
+                            <constraint firstItem="tmt-pp-GaY" firstAttribute="top" secondItem="plQ-sI-g9Z" secondAttribute="bottom" constant="8" id="ZyI-8W-Dsx"/>
+                            <constraint firstItem="GRP-Ct-TeG" firstAttribute="leading" secondItem="l14-o7-OC7" secondAttribute="leadingMargin" constant="20" id="c40-pL-PWZ"/>
+                            <constraint firstItem="hhH-ej-5Jo" firstAttribute="leading" secondItem="NLN-Of-bxJ" secondAttribute="trailing" constant="-34" id="cm2-fE-g3Q"/>
+                            <constraint firstItem="tmt-pp-GaY" firstAttribute="centerX" secondItem="l14-o7-OC7" secondAttribute="centerX" id="fiK-vX-NNy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hhH-ej-5Jo" secondAttribute="trailing" id="n3E-Wo-nSY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GRP-Ct-TeG" secondAttribute="trailing" constant="20" id="nV0-Rs-wgY"/>
+                            <constraint firstItem="GRP-Ct-TeG" firstAttribute="top" secondItem="tmt-pp-GaY" secondAttribute="bottom" constant="8" id="zEP-xt-92R"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="CeW-ZP-3Ap"/>
                 </viewController>
@@ -213,9 +237,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="80" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="EdH-lw-YFw">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="80" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="EdH-lw-YFw">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <connections>
                                     <outlet property="dataSource" destination="mp5-hC-OaX" id="fyP-Fj-EAH"/>
@@ -223,6 +246,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EdH-lw-YFw" firstAttribute="top" secondItem="AhB-x1-SLA" secondAttribute="top" id="1Oz-WL-TCO"/>
+                            <constraint firstItem="EdH-lw-YFw" firstAttribute="leading" secondItem="AhB-x1-SLA" secondAttribute="leading" id="Dqc-xL-nsI"/>
+                            <constraint firstAttribute="trailing" secondItem="EdH-lw-YFw" secondAttribute="trailing" id="E97-OK-njX"/>
+                            <constraint firstItem="Hkv-QH-f3H" firstAttribute="top" secondItem="EdH-lw-YFw" secondAttribute="bottom" id="tpY-nN-oC6"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="sNd-sM-CeH"/>
                     <connections>
@@ -245,13 +274,18 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Osa-qg-oBZ">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Osa-qg-oBZ">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Osa-qg-oBZ" firstAttribute="leading" secondItem="UKr-xR-lOb" secondAttribute="leading" id="X4b-bj-7N3"/>
+                            <constraint firstItem="Osa-qg-oBZ" firstAttribute="top" secondItem="UKr-xR-lOb" secondAttribute="top" id="dnB-3Z-fS1"/>
+                            <constraint firstItem="dgR-WA-RR0" firstAttribute="top" secondItem="Osa-qg-oBZ" secondAttribute="bottom" id="jN9-X7-gfg"/>
+                            <constraint firstAttribute="trailing" secondItem="Osa-qg-oBZ" secondAttribute="trailing" id="oTJ-55-bzi"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="8yJ-OS-xlY"/>
                 </viewController>
@@ -301,7 +335,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
     <resources>
         <image name="About" width="27" height="27"/>
         <image name="Find" width="27" height="27"/>
-        <image name="JAYE Logo" width="16" height="16"/>
+        <image name="JAYE Logo" width="200" height="96"/>
         <image name="Logo" width="16" height="16"/>
         <image name="Reminders" width="27" height="27"/>
         <image name="Subscriptions" width="27" height="27"/>
