@@ -29,4 +29,18 @@ extension NSCalendar.Unit {
         }
         return display
     }
+    
+    func dateFormat() -> String {
+        let display: String
+        if self.contains(.day) {
+            display = "HH:mm"
+        } else if self.contains(.weekOfYear) {
+            display = "EEEE, HH:mm"
+        } else if self.contains(.month) {
+            display = "dd MMMM, HH:mm"
+        } else {
+            display = "EEEE, dd MMMM, HH:mm"
+        }
+        return display
+    }
 }

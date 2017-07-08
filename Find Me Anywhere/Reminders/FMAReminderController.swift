@@ -59,6 +59,7 @@ class FMAReminderController: UITableViewController, DatePickerCellDelegate, FMAC
                 cell.detailTextLabel?.text = self.reminder.name
                 cell.textLabel?.text = "Name"
             case .date:
+                dateCell.dateFormat = self.reminder.frequence.dateFormat()
                 dateCell.date = self.reminder.date
                 dateCell.leftLabel.text = "Date"
                 dateCell.delegate = self

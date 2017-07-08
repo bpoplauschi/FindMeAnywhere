@@ -58,7 +58,7 @@ open class DatePickerCell: UITableViewCell {
             datePicker.date = date
             DatePickerCell.dateFormatter.dateStyle = dateStyle
             DatePickerCell.dateFormatter.timeStyle = timeStyle
-            DatePickerCell.dateFormatter.dateFormat = "EEEE, MMMM dd, HH:mm"
+            DatePickerCell.dateFormatter.dateFormat = dateFormat
 
             rightLabel.text = DatePickerCell.dateFormatter.string(from: date)
         }
@@ -74,6 +74,12 @@ open class DatePickerCell: UITableViewCell {
     open var dateStyle = DateFormatter.Style.medium {
         didSet {
             DatePickerCell.dateFormatter.dateStyle = dateStyle
+            rightLabel.text = DatePickerCell.dateFormatter.string(from: date)
+        }
+    }
+    open var dateFormat: String = "HH:mm" {
+        didSet {
+            DatePickerCell.dateFormatter.dateFormat = dateFormat
             rightLabel.text = DatePickerCell.dateFormatter.string(from: date)
         }
     }
