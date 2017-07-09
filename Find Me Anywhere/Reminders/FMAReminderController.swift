@@ -108,7 +108,7 @@ class FMAReminderController: UITableViewController, DatePickerCellDelegate, FMAC
     // MARK: Helper methods
     
     fileprivate func presentEditName() {
-        let alertController = UIAlertController(title: "Reminder name", message: "Please input reminder name:", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "Name", message: "Please input the name of the person:", preferredStyle: .alert)
         
         let confirmAction = UIAlertAction(title: "OK", style: .default) { (_) in
             if let name = alertController.textFields?[0].text {

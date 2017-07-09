@@ -16,7 +16,7 @@ class FMARemindersViewController: UIViewController, FMAReminderControllerDelegat
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Reminders"
+        title = "SOS Alerts"
         
         // Register
         FMALocalNotificationsScheduler.registerForNotifications()
@@ -30,7 +30,7 @@ class FMARemindersViewController: UIViewController, FMAReminderControllerDelegat
         // Default reminder
         let reminder = FMAReminder()
         let reminderController = FMAReminderController(reminder: reminder)
-        reminderController.title = "Add reminder"
+        reminderController.title = "Add SOS alert"
         reminderController.delegate = self
         self.navigationController?.pushViewController(reminderController, animated: true)
     }

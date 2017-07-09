@@ -11,13 +11,13 @@ import UIKit
 class FMASubscriptionsViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     let subscriptions = [["title": "Weekly subscription",
-                          "price": "$1",
+                          "price": "0.75 €",
                           "description": "pay week by week"],
                          ["title": "Monthly subscription",
-                          "price": "$3",
+                          "price": "3 €",
                           "description": "pay once for each month"],
                          ["title": "Yearly subscription",
-                          "price": "$30",
+                          "price": "40 €",
                           "description": "pay once for the whole year"]]
 
     override func viewDidLoad() {
