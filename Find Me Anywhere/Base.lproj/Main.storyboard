@@ -148,8 +148,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="GRP-Ct-TeG">
-                                <rect key="frame" x="16" y="208" width="343" height="272.5"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="GRP-Ct-TeG">
+                                <rect key="frame" x="16" y="208" width="343" height="212"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="212" id="2ps-gf-DBO"/>
+                                </constraints>
                                 <mutableString key="text">Find Me Anywhere Romania is a J.A. branded company that developed the Geo-plast, a tool meant to monitorize people with certain medical conditions or children.
 
 FMA is responsible of giving the Geo-plast based on a document that proves custody of the child or the medical condition of the patient.
