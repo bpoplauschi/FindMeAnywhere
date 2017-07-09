@@ -105,8 +105,42 @@ class FMAFindViewController: UIViewController {
     
     func didTapSearch(responder: UIResponder) {
         // initiate localization
-        // 1. call the number
-        guard let phoneNumber = FMATrackersManager.sharedManager.devices[0]["phone"] else { return }
+        // 1. select the tracker
+        let trackers = FMATrackersManager.sharedManager.devices
+        
+        if trackers.count == 0 {
+            let alertController = UIAlertController(title: "No trackers added", message: "Please add a tracker", preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: { _ in
+                if let appDelegate = UIApplication.shared.delegate as? FMAApplicationDelegate {
+                    appDelegate.goToTrackers()
+                }
+            }))
+            self.present(alertController, animated: true, completion: nil)
+            return
+        }
+        
+        if trackers.count == 1 {
+            localizeByCalling(number: trackers[0]["phone"])
+            return
+        }
+        
+        let alertController = UIAlertController(title: "Select which tracker", message: "to use for getting back the location", preferredStyle: .actionSheet)
+        
+        for tracker in trackers {
+            guard let trackerName = tracker["name"], let trackerPhone = tracker["phone"] else { continue }
+            let trackerTitle = trackerName + " (" + trackerPhone + ")"
+            alertController.addAction(UIAlertAction(title: trackerTitle, style: .default, handler: { _ in
+                self.localizeByCalling(number: trackerPhone)
+            }))
+        }
+        alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        self.present(alertController, animated: true, completion: nil)
+    }
+    
+    func localizeByCalling(number: String?) {
+        guard let phoneNumber = number else { return }
+        
+        // call the number
         guard let phoneURL = URL(string: "tel://" + phoneNumber) else { return }
         localizationInProgress = true
         localizationPhoneNumber = phoneNumber

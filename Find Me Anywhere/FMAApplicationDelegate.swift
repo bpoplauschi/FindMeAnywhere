@@ -26,5 +26,11 @@ class FMAApplicationDelegate: UIResponder, UIApplicationDelegate {
         alertController.addAction(okAction)
         self.window?.rootViewController?.present(alertController, animated: true, completion: nil)
     }
+    
+    func goToTrackers() {
+        if let tabBarController = window?.rootViewController as? UITabBarController {
+            tabBarController.selectedIndex = 2
+        }
+    }
 }
 
